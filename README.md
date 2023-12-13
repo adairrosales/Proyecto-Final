@@ -1,4 +1,4 @@
-# Proyecto Final :fa-file-code-o:  :laughing:
+# Proyecto Final :chart_with_upwards_trend:
 ***Desarrollo de una aplicación web completa utilizando Flask, con un enfoque en un diseño atractivo y funcionalidades de interacción con base de datos.***
  
 

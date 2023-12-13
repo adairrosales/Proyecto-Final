@@ -1,4 +1,4 @@
-# Proyecto Final :fa-file-code-o:
+# Proyecto Final :fa-file-code-o:  :laughing:
 ***Desarrollo de una aplicación web completa utilizando Flask, con un enfoque en un diseño atractivo y funcionalidades de interacción con base de datos.***
  
 

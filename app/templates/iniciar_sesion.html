@@ -1,1 +1,20 @@
-iniciar sesión 
+{% extends "base.html" %}
+{% block content %}
+<div class="content-section">
+    <form method="POST" action="">
+        {{ form.hidden_tag() }}
+        <fieldset class="form-group">
+            <legend class="border-bottom mb-4">Iniciar Sesión</legend>
+            {{ form.username.label(class="form-control-label") }}
+            {{ form.username(class="form-control form-control-lg") }}
+        </fieldset>
+        <fieldset class="form-group">
+            {{ form.password.label(class="form-control-label") }}
+            {{ form.password(class="form-control form-control-lg") }}
+        </fieldset>
+        <div class="form-group">
+            {{ form.submit(class="btn btn-outline-info") }}
+        </div>
+    </form>
+</div>
+{% endblock %}

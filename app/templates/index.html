@@ -1,4 +1,38 @@
-<!DOCTYPE html>
+{% extends 'base.html' %}
+
+{% block title %}Proyecto Final{% endblock %}
+
+{% block body %}
+    {% if flash_messages %}
+        {% for message in flash_messages %}
+            <div class="alert alert-info">{{ message }}</div>
+        {% endfor %}
+    {% endif %}
+
+    <!-- Contenido de la página principal -->
+    <h1>Bienvenido a la aplicación</h1>
+    <p>Descripción y contenido principal...</p>
+
+    <!-- Formulario de inicio de sesión -->
+    <h2>Iniciar Sesión</h2>
+    <form action="{{ url_for('iniciar_sesion') }}" method="post">
+        <!-- Agrega aquí los campos del formulario para el inicio de sesión -->
+        <input type="text" name="username" placeholder="Nombre de usuario" required>
+        <input type="password" name="password" placeholder="Contraseña" required>
+        <button type="submit">Iniciar Sesión</button>
+    </form>
+
+    <!-- Formulario de registro -->
+    <h2>Registrarse</h2>
+    <form action="{{ url_for('registro') }}" method="post">
+        <!-- Agrega aquí los campos del formulario para el registro -->
+        <input type="text" name="username" placeholder="Nombre de usuario" required>
+        <input type="password" name="password" placeholder="Contraseña" required>
+        <input type="password" name="confirm_password" placeholder="Confirmar Contraseña" required>
+        <button type="submit">Registrarse</button>
+    </form>
+{% endblock %}
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -29,4 +63,4 @@
     </div>
 
 </body>
-</html>
+</html> -->
